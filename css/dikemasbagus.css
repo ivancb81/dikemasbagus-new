@@ -66,7 +66,7 @@ a.first-background-color:hover {
 }
 
 .secondary-background-color {
-    background-color: #dfeedd;
+    background-color: #edf4ec;
 }
 
 .third-background-color {
@@ -79,6 +79,10 @@ a.first-background-color:hover {
 
 .fifth-background-color {
     background-color: #4c8542;
+}
+
+.sixth-background-color {
+    background-color: #fdfdfd;
 }
 
 .gradient-background-color {
@@ -180,22 +184,22 @@ a.first-background-color:hover {
 .navbar-toggler:not(.collapsed) .bar1 {
     top: 10px;
     transform: rotate(45deg);
-    background-color: #4bb050;
+    /* background-color: #4bb050; */
 }
 .navbar-toggler:not(.collapsed) .bar2 {
     opacity: 0;
-    background-color: #4bb050;
+    /* background-color: #4bb050; */
 }
 .navbar-toggler:not(.collapsed) .bar3 {
     top: 10px;
     transform: rotate(-45deg);
-    background-color: #4bb050;
+    /* background-color: #4bb050; */
 }
 /* E:NAVBAR HAMBURGER */
 
 /* S: JUMBOTRON */
 .jumbotron {
-    padding-top: 220px;
+    padding-top: 120px;
     margin: 0px;
     height: 100vh;
     position: relative;
@@ -223,10 +227,11 @@ a.first-background-color:hover {
     background-color: #17a34a;
     color: white;
     font-size: 0.9rem;
-    width: 180px;
+    width: 100%;
     border-radius: 10px;
-    padding: 12px 20px;
-    margin-left: 12px;
+    padding: 12px 10px;
+    /* margin-left: 12px; */
+    cursor: pointer;
 }
 
 .btn-konsultasi-gratis:hover {
@@ -239,9 +244,10 @@ a.first-background-color:hover {
     color: white;
     font-size: 0.9rem;
     border: 1px solid #17a34a;
-    width: 230px;
+    width: 100%;
     border-radius: 10px;
-    padding: 12px 20px;
+    padding: 12px 10px;
+    cursor: pointer;
 }
 
 .btn-solusi-keamanan:hover {
@@ -252,8 +258,8 @@ a.first-background-color:hover {
 
 .slider-wrapper {
     position: relative;
-    width: 750px;
-    /* width: 100%; */
+    /* width: 750px; */
+    width: 100%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -266,6 +272,7 @@ a.first-background-color:hover {
     overflow: hidden;
     border-radius: 8px;
     /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    /* background-color: white; */
 }
 .slides-wrapper {
     display: flex;
@@ -273,6 +280,8 @@ a.first-background-color:hover {
     height: 100%;
     transition: transform 0.5s ease-in-out;
     cursor: grab;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white; */
 }
 
 .slides-wrapper:active {
@@ -289,12 +298,12 @@ a.first-background-color:hover {
     padding: 15px;
     border-radius: 8px;
     box-sizing: border-box;
-    width: calc(100% - 10px); /* full width minus padding left+right */
-    height: calc(200% - 10px); /* full height minus padding top+bottom */
+    /*width: calc(100% - 10px); /* full width minus padding left+right */
+    /*height: calc(200% - 10px); /* full height minus padding top+bottom */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); */
+    /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); */
 }
 .frame img {
     width: 100%;
@@ -315,7 +324,7 @@ a.first-background-color:hover {
     padding-right: 10px;
 }
 /* Tombol di luar gambar, kiri dan kanan */
-button {
+.buttonslider {
     background-color: rgba(76, 175, 80, 0.8);
     border: none;
     color: white;
@@ -331,10 +340,10 @@ button {
     user-select: none;
     flex-shrink: 0;
 }
-button:hover:not(:disabled) {
+.buttonslider:hover:not(:disabled) {
     background-color: rgba(69, 160, 73, 1);
 }
-button:disabled {
+.buttonslider:disabled {
     background-color: rgba(150, 150, 150, 0.5);
     cursor: not-allowed;
 }
@@ -370,7 +379,7 @@ button:disabled {
 }
 
 .layanandikemasbagus {
-    margin-top: 80px;
+    margin-top: 850px;
 }
 
 .layanandikemasbaguskotak {
@@ -527,13 +536,20 @@ button:disabled {
 /* Responsive Design */
 
 @media (max-width: 576px) {
+    .jumbotron {
+        padding-top: 120px;
+        margin: 0px;
+        height: 100vh;
+        position: relative;
+    }
+
     .slider-wrapper {
         width: 100%;
     }
     .slider-container {
         height: 100%;
     }
-    button {
+    .buttonslider {
         width: 20px;
         height: 20px;
         font-size: 0.6rem;
@@ -563,19 +579,38 @@ button:disabled {
     }
 
     .layanandikemasbagus {
-        margin-top: 800px;
+        margin-top: 770px;
+    }
+
+    .alasanmemilih-card {
+        border-radius: 15px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        /* transition: box-shadow 0.3s ease, transform 0.3s ease; */
+        cursor: pointer;
+        height: 100%; /* agar semua card sama tinggi */
+        /* display: flex;
+        flex-direction: column;
+        justify-content: flex-start; */
     }
 }
 
 /* Tablet: layar antara 601px sampai 900px */
 @media (min-width: 768px) and (max-width: 992px) {
+    .jumbotron {
+        padding-top: 520px;
+        margin: 0px;
+        height: 100vh;
+        position: relative;
+    }
     .slider-wrapper {
         width: 100%;
     }
     .slider-container {
         height: 100%;
     }
-    button {
+    .buttonslider {
         width: 20px;
         height: 20px;
         font-size: 0.6rem;
@@ -587,7 +622,46 @@ button:disabled {
 
 /* Desktop: layar lebih dari 900px */
 @media (min-width: 992px) {
+    .jumbotron {
+        padding-top: 220px;
+        margin: 0px;
+        height: 100vh;
+        position: relative;
+    }
+
     .tingkatkepuasan-img img {
         border-radius: 0px 15px 15px 0px;
+    }
+
+    .btn-konsultasi-gratis {
+        background-color: #17a34a;
+        color: white;
+        font-size: 0.9rem;
+        width: 180px;
+        border-radius: 10px;
+        padding: 12px 10px;
+        /* margin-left: 12px; */
+        cursor: pointer;
+    }
+
+    .btn-konsultasi-gratis:hover {
+        background-color: #4bb050;
+        color: white;
+    }
+
+    .btn-solusi-keamanan {
+        background-color: #212121;
+        color: white;
+        font-size: 0.9rem;
+        border: 1px solid #17a34a;
+        width: 230px;
+        border-radius: 10px;
+        padding: 12px 10px;
+        cursor: pointer;
+    }
+
+    .btn-solusi-keamanan:hover {
+        background-color: #4bb050;
+        color: white;
     }
 }
