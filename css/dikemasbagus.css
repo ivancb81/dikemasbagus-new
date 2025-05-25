@@ -86,7 +86,7 @@ a.first-background-color:hover {
 }
 
 .gradient-background-color {
-    background-image: linear-gradient(360deg, #3e8132, #4bb050);
+    background-image: linear-gradient(to top, #3b6a35, #55c45a);
 }
 
 .first-font-size {
@@ -112,6 +112,10 @@ a.first-background-color:hover {
 
 .sixth-font-size {
     font-size: 1.2rem;
+}
+
+.seventh-font-size {
+    font-size: 3.9rem;
 }
 
 .navbar-toggler,
@@ -533,6 +537,96 @@ a.first-background-color:hover {
     padding: 10px 30px;
 }
 
+.footer-link a:hover {
+    color: #4bb050;
+}
+
+.cerita-kami {
+    padding-top: 80px;
+}
+
+.meetfounder {
+    padding: 70px 0px 40px 0px;
+}
+
+.list-group-item {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.border-left-custom {
+    border-left: 4px solid #4bb050; /* Warna dan ketebalan border */
+    padding-left: 1rem; /* Memberi jarak antara border dan teks */
+    margin-left: 0; /* Menghilangkan margin kiri jika ada */
+}
+
+/* Custom styling untuk card alasan memilih */
+.teamdikemasbagus-card {
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    /* transition: box-shadow 0.3s ease, transform 0.3s ease; */
+    cursor: pointer;
+    height: 100%; /* agar semua card sama tinggi */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start; */
+}
+
+/* Efek shadow dan scale saat hover */
+.teamdikemasbagus-card:hover {
+    box-shadow: 1px 5px 18px rgba(0, 0, 0, 0.1);
+    /* transform: translateY(-5px); */
+}
+
+.teamdikemasbagus-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    pointer-events: none; /* Prevent image drag */
+}
+
+.portfolio-showcase-card {
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    /* transition: box-shadow 0.3s ease, transform 0.3s ease; */
+    cursor: pointer;
+    height: 100%; /* agar semua card sama tinggi */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start; */
+}
+
+.portfolio-showcase-card:hover {
+    box-shadow: 1px 5px 18px rgba(0, 0, 0, 0.1);
+    /* transform: translateY(-5px); */
+}
+
+.portfolio-showcase-card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    pointer-events: none; /* Prevent image drag */
+}
+
+.button-portfolio a {
+    background-color: #4bb050;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.button-portfolio a:hover {
+    background-color: #2e7035;
+    color: white;
+}
 /* Responsive Design */
 
 @media (max-width: 576px) {
@@ -593,6 +687,16 @@ a.first-background-color:hover {
         /* display: flex;
         flex-direction: column;
         justify-content: flex-start; */
+    }
+
+    .border-left-custom {
+        border-left: 4px solid #4bb050; /* Warna dan ketebalan border */
+        padding-left: 0.8rem; /* Memberi jarak antara border dan teks */
+        margin-left: 0; /* Menghilangkan margin kiri jika ada */
+    }
+
+    .seventh-font-size {
+        font-size: 2.2rem;
     }
 }
 
@@ -663,5 +767,9 @@ a.first-background-color:hover {
     .btn-solusi-keamanan:hover {
         background-color: #4bb050;
         color: white;
+    }
+
+    .layanandikemasbagus {
+        margin-top: 100px;
     }
 }
