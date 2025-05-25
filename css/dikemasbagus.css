@@ -118,6 +118,10 @@ a.first-background-color:hover {
     font-size: 3.9rem;
 }
 
+.eighty-font-size {
+    font-size: 1.1rem;
+}
+
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -626,6 +630,14 @@ a.first-background-color:hover {
 .button-portfolio a:hover {
     background-color: #2e7035;
     color: white;
+}
+
+.layanan {
+    margin-top: 150px;
+}
+
+ul.layanan-bullet li::marker {
+    color: #4bb050; /* Warna oranye */
 }
 /* Responsive Design */
 
