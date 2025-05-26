@@ -122,6 +122,10 @@ a.first-background-color:hover {
     font-size: 1.1rem;
 }
 
+.nineth-font-size {
+    font-size: 0.8rem;
+}
+
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -639,6 +643,138 @@ a.first-background-color:hover {
 ul.layanan-bullet li::marker {
     color: #4bb050; /* Warna oranye */
 }
+
+.portfolio-card {
+    position: relative;
+    border-radius: 15px;
+    /* text-align: center; */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    /* transition: box-shadow 0.3s ease, transform 0.3s ease; */
+    cursor: pointer;
+    height: 100%; /* agar semua card sama tinggi */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start; */
+}
+
+.portfolio-card:hover {
+    box-shadow: 1px 5px 22px rgba(0, 0, 0, 0.1);
+    /* transform: translateY(-5px); */
+}
+
+.portfolio-card img {
+    height: 230px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    pointer-events: none; /* Prevent image drag */
+}
+
+.portfolio-card-overlay {
+    position: absolute;
+    height: 230px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.portfolio-card:hover .portfolio-card-overlay {
+    opacity: 0.7;
+}
+
+.btn-close {
+    position: relative;
+    z-index: 1;
+    /* transition: box-shadow 0.3s ease; */
+    width: 5px !important;
+    height: 5px !important;
+}
+
+.btn-close:hover::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25px; /* ukuran lingkaran */
+    height: 25px;
+    border: 2px solid #17a34a; /* border lingkaran */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    padding: 4px; /* padding sekitar 3-5px */
+    z-index: -1; /* agar lingkaran berada di belakang ikon close */
+    transition: border-color 0.3s ease;
+}
+
+/* Optional: efek perubahan warna border saat hover */
+.btn-close:hover::before {
+    border-color: #17a34a;
+}
+/* button.btn-close-modal-portfolio {
+    width: 5px !important;
+    height: 5px !important;
+}
+
+button.btn-close-modal-portfolio:hover {
+    width: 5px !important;
+    height: 5px !important;
+    border-radius: 50%;
+    border: #17a34a 2px solid !important;
+    padding: 10px !important;
+} */
+.button-close-modal-portfolio {
+    position: absolute;
+    top: -15px;
+    right: 10px;
+}
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: #d3d3d3; /* abu-abu statis */
+    opacity: 0.8;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: none;
+    border: none;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #4caf50; /* hijau saat hover */
+    filter: brightness(1.1);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0) contrast(100%);
+    width: 20px;
+    height: 20px;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
 /* Responsive Design */
 
 @media (max-width: 576px) {
@@ -709,6 +845,11 @@ ul.layanan-bullet li::marker {
 
     .seventh-font-size {
         font-size: 2.2rem;
+    }
+    .button-close-modal-portfolio {
+        position: absolute;
+        top: -35px;
+        right: 0px;
     }
 }
 
