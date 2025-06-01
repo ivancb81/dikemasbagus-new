@@ -289,6 +289,7 @@ a.first-background-color:active {
     padding: 12px 10px;
     /* margin-left: 12px; */
     cursor: pointer;
+    z-index: 999;
 }
 
 .btn-konsultasi-gratis:hover {
@@ -305,6 +306,7 @@ a.first-background-color:active {
     border-radius: 10px;
     padding: 12px 10px;
     cursor: pointer;
+    z-index: 999;
 }
 
 .btn-solusi-keamanan:hover {
@@ -413,19 +415,19 @@ a.first-background-color:active {
 .kotakumkm {
     background-color: #4bb050;
     color: white;
-    padding: 15px 15px;
+    padding: 12px 15px;
     border-radius: 12px;
     text-align: left;
     font-size: 1.875rem;
     margin-top: 20px;
     width: 145px;
     position: absolute;
-    bottom: -60px;
+    bottom: -20px;
     right: -10px;
 }
 
 .kotakumkm h3 {
-    margin-bottom: 0px;
+    margin-bottom: -15px;
     padding-bottom: 0px;
     font-weight: 700;
 }
@@ -1280,14 +1282,14 @@ option[disabled][hidden] {
     .kotakumkm {
         background-color: #4bb050;
         color: white;
-        padding: 15px 15px;
+        padding: 12px 15px;
         border-radius: 12px;
         text-align: left;
         font-size: 1.875rem;
         margin-top: 20px;
         width: 145px;
         position: absolute;
-        bottom: -20px;
+        bottom: -30px;
         right: -10px;
         z-index: 2;
     }
@@ -1407,5 +1409,36 @@ option[disabled][hidden] {
         width: 100%; /* Agar caption tidak melebar melebihi gambar */
         box-sizing: border-box;
         user-select: none; /* Agar teks tidak bisa diseleksi saat drag slider */
+    }
+    .btn-konsultasi-gratis {
+        background-color: #17a34a;
+        color: white;
+        font-size: 0.9rem;
+        width: 35%;
+        border-radius: 10px;
+        padding: 12px 10px;
+        /* margin-left: 12px; */
+        cursor: pointer;
+    }
+
+    .btn-konsultasi-gratis:hover {
+        background-color: #4bb050 !important;
+        color: white !important;
+    }
+
+    .btn-solusi-keamanan {
+        background-color: #212121;
+        color: white;
+        font-size: 0.9rem;
+        border: 1px solid #17a34a;
+        width: 40%;
+        border-radius: 10px;
+        padding: 12px 10px;
+        cursor: pointer;
+    }
+
+    .btn-solusi-keamanan:hover {
+        background-color: #4bb050 !important;
+        color: white !important;
     }
 }
