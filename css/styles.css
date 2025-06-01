@@ -1198,6 +1198,16 @@ option[disabled][hidden] {
 .h-8 {
     height: 2rem;
 }
+
+.icon-layanan {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: rgba(76, 175, 80, 0.1);
+    color: rgba(76, 175, 80, 1);
+    text-align: center;
+    line-height: 2.5rem;
+}
 /* Tablet portrait (481px - 768px) */
 @media (min-width: 576px) and (max-width: 768px) {
 }
